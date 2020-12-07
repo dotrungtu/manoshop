@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.manoshop.TopPicks_Activity"
+    android:background="#fff">
+
+   <androidx.constraintlayout.widget.ConstraintLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+       <ImageView
+           android:id="@+id/imageView"
+           android:layout_width="0dp"
+           android:layout_height="200dp"
+           android:scaleType="centerCrop"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toTopOf="parent"
+           app:srcCompat="@drawable/bg_cat_toppick" />
+
+       <ImageView
+           android:id="@+id/img_btn_top_picks_back"
+           android:layout_width="40dp"
+           android:layout_height="40dp"
+           android:layout_marginStart="20dp"
+           android:layout_marginTop="20dp"
+           android:padding="5dp"
+           android:background="@drawable/circle_back"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toTopOf="parent"
+           app:srcCompat="@drawable/gradient_ic_back" />
+
+       <TextView
+           android:id="@+id/textView15"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginEnd="20dp"
+           android:fontFamily="@font/fertigoproregular"
+           android:gravity="right"
+           android:text="@string/top_picks_title"
+           android:textColor="#fff"
+           android:textSize="45dp"
+           android:textStyle="bold"
+           app:layout_constraintBottom_toBottomOf="@+id/imageView"
+           app:layout_constraintEnd_toEndOf="parent" />
+
+       <RelativeLayout
+           android:layout_width="0dp"
+           android:layout_height="40dp"
+           android:layout_marginStart="10dp"
+           android:layout_marginEnd="20dp"
+           app:layout_constraintBottom_toBottomOf="@+id/img_btn_top_picks_back"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintStart_toEndOf="@+id/img_btn_top_picks_back"
+           app:layout_constraintTop_toTopOf="@+id/img_btn_top_picks_back">
+
+
+           <ImageView
+               android:id="@+id/img_btn_top_picks_to_cart"
+               android:layout_width="40dp"
+               android:layout_height="40dp"
+               android:layout_alignParentEnd="true"
+               android:padding="10dp"
+               android:background="@drawable/bg_cart"
+               android:src="@drawable/gradient_ic_cart_w"/>
+       </RelativeLayout>
+
+       <RelativeLayout
+           android:id="@+id/ln_picks"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toBottomOf="@+id/imageView">
+           <TextView
+               android:id="@+id/textView2"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:layout_marginStart="20dp"
+               android:text="PICKs"
+               android:textColor="#a10e0e"
+               android:textStyle="bold"
+               android:fontFamily="@font/fertigoproregular"
+               android:textSize="45dp"
+                />
+       </RelativeLayout>
+
+       <TextView
+           android:id="@+id/textView16"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="@string/top_picks_des"
+           android:textColor="#fff"
+           android:textSize="20dp"
+           android:fontFamily="@font/fertigoproregular"
+           app:layout_constraintBottom_toTopOf="@+id/textView15"
+           app:layout_constraintStart_toStartOf="@+id/img_btn_top_picks_back" />
+
+       <androidx.recyclerview.widget.RecyclerView
+           android:id="@+id/recycler_top_picks_view"
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:layout_marginStart="4dp"
+           android:layout_marginEnd="4dp"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toBottomOf="@+id/ln_picks" />
+
+   </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

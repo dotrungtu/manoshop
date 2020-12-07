@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "873639130851",
+    "project_id": "mano-shop",
+    "storage_bucket": "mano-shop.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:873639130851:android:9d47beb8db4a65a42c37d6",
+        "android_client_info": {
+          "package_name": "com.example.manoshop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "873639130851-l6ke3bqm06kpmf57i8j40k97004b92gl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.manoshop",
+            "certificate_hash": "a467f972c46b5e885763fca6c3df53604c0ce023"
+          }
+        },
+        {
+          "client_id": "873639130851-0go4vgcl2fa5phsk6dcuc73q9nse508t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBLNDB-8p6ROn6v2qFWVo0dxwE5btw9_9E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "873639130851-0go4vgcl2fa5phsk6dcuc73q9nse508t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

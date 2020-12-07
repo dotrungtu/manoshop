@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.manoshop.SettingUserProfile_Activity"
+    android:background="#fff">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img_user_profile"
+            android:layout_width="0dp"
+            android:layout_height="450dp"
+            android:scaleType="centerCrop"
+            android:paddingTop="50dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/lollipop_girl_aes" />
+
+        <ImageView
+            android:id="@+id/img_btn_profile_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:tint="#000"
+            android:elevation="5dp"
+            android:padding="5dp"
+            android:background="@drawable/circle_back"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/gradient_ic_back" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="380dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/profile_ui"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/img_user_profile" />
+
+        <ImageView
+            android:id="@+id/img_profile_drop_menu"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:layout_constraintEnd_toEndOf="@+id/imageView3"
+            app:layout_constraintHorizontal_bias="0.524"
+            app:layout_constraintStart_toStartOf="@+id/imageView3"
+            app:layout_constraintTop_toTopOf="@+id/imageView3"
+            android:src="@drawable/gradient_ic_setting" />
+
+        <TextView
+            android:id="@+id/txt_profile_user_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Lollipop Girl"
+            android:gravity="center"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/montserratmedium"
+            android:textColor="#000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_profile_drop_menu" />
+
+        <RelativeLayout
+            android:id="@+id/ln_lay1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="10dp"
+            app:layout_constraintTop_toBottomOf="@+id/txt_profile_user_name">
+
+            <ImageView
+                android:id="@+id/si1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/gradient_ic_phone"/>
+
+            <TextView
+                android:id="@+id/txt_profile_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="0123456789"
+                android:textSize="18dp"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/montserratregular"
+                android:textColor="#333"
+                android:layout_toRightOf="@id/si1"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/ln_lay2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            app:layout_constraintTop_toBottomOf="@+id/ln_lay1">
+
+            <ImageView
+                android:id="@+id/si2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/gradient_ic_mail"/>
+
+            <TextView
+                android:id="@+id/txt_profile_mail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="abc123@example.com"
+                android:textSize="18dp"
+                android:layout_toRightOf="@+id/si2"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/montserratregular"
+                android:textColor="#333"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/ln_lay3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            app:layout_constraintTop_toBottomOf="@+id/ln_lay2">
+
+            <ImageView
+                android:id="@+id/si3"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:scaleX="1.2"
+                android:scaleY="1.2"
+                android:src="@drawable/gradient_ic_address"/>
+
+            <TextView
+                android:id="@+id/txt_profile_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/montserratregular"
+                android:layout_toRightOf="@+id/si3"
+                android:text="Street 1, Ward 2, District 3, Ho Chi Minh City"
+                android:textColor="#333"
+                android:textSize="18dp"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+
+
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Profile"
+            android:textSize="22dp"
+            android:textColor="#fff"
+            android:fontFamily="@font/montserratmedium"
+            app:layout_constraintBottom_toBottomOf="@+id/img_btn_profile_back"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/img_btn_profile_back" />
+
+        <ProgressBar
+            android:id="@+id/progressBar_SettingUser"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintBottom_toTopOf="@+id/imageView3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

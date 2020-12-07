@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    app:cardBackgroundColor="#00000000"
+    android:layout_marginTop="20dp"
+    app:cardElevation="0dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="2dp"
+        android:background="#fff">
+
+        <TextView
+            android:id="@+id/txt_wishlist_brand"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="38dp"
+            android:gravity="center_vertical"
+            android:fontFamily="@font/montserratmedium"
+            android:hint="Brand"
+            android:textColor="#0B0A0A"
+            android:textSize="16dp"
+            android:textStyle="italic"
+            app:layout_constraintBottom_toBottomOf="@+id/cardView4"
+            app:layout_constraintStart_toStartOf="@+id/txt_wishlist_product_name" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            app:cardBackgroundColor="#00000000"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/img_wishlist_product"
+                android:layout_width="94dp"
+                android:layout_height="101dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/img_header" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/txt_wishlist_product_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginEnd="10dp"
+            android:fontFamily="@font/montserratmedium"
+            android:hint="Product Name"
+            android:textColor="#4c4c4c"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/cardView4"
+            app:layout_constraintTop_toTopOf="@+id/cardView4" />
+
+        <TextView
+            android:id="@+id/txt_wishlist_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/montserratmedium"
+            android:hint="."
+            android:textColor="#a10e0e"
+            android:textSize="18dp"
+            app:layout_constraintBottom_toBottomOf="@+id/cardView4"
+            app:layout_constraintStart_toStartOf="@+id/txt_wishlist_product_name" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:layout_marginStart="3dp"
+            android:textColor="#a10e0e"
+            android:text="$"
+            app:layout_constraintBottom_toBottomOf="@+id/txt_wishlist_price"
+            app:layout_constraintStart_toEndOf="@+id/txt_wishlist_price"
+            app:layout_constraintTop_toTopOf="@+id/txt_wishlist_price" />
+
+        <ImageView
+            android:id="@+id/img_remove_item_wishlist"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="10dp"
+            android:scaleX="1.2"
+            android:scaleY="1.2"
+            android:src="@drawable/gradient_ic_remove_bin"
+            app:layout_constraintBottom_toBottomOf="@+id/txt_wishlist_price"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <ImageView
+            android:id="@+id/img_add_to_cart"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="10dp"
+            android:scaleX="1.2"
+            android:scaleY="1.2"
+            android:layout_marginBottom="5dp"
+            android:src="@drawable/gradient_ic_add_to_cart"
+            app:layout_constraintBottom_toBottomOf="@+id/img_remove_item_wishlist"
+            app:layout_constraintEnd_toStartOf="@+id/img_remove_item_wishlist"
+            app:layout_constraintTop_toTopOf="@+id/img_remove_item_wishlist" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
+

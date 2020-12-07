@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.manoshop.ShoppingCart_Activity"
+    android:background="#f7f7f7">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout7"
+        android:layout_width="190dp"
+        android:layout_height="190dp"
+        android:background="@drawable/corner_left_cart"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/img_btn_cart_back"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:tint="#fff"
+            android:padding="1dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/gradient_ic_back" />
+
+        <TextView
+            android:id="@+id/txtCart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/montserratmedium"
+            android:text="Cart"
+            android:textColor="#fff"
+            android:textSize="25dp"
+            app:layout_constraintBottom_toBottomOf="@+id/img_btn_cart_back"
+            app:layout_constraintStart_toEndOf="@+id/img_btn_cart_back"
+            app:layout_constraintTop_toTopOf="@+id/img_btn_cart_back" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout6"
+        android:layout_width="110dp"
+        android:layout_height="100dp"
+        android:background="@drawable/corner_right_cart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/txtTotalTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:fontFamily="@font/montserratmedium"
+            android:text="Total"
+            android:textColor="#fff"
+            android:textSize="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/txt_cash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="3dp"
+            android:text="$"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/txt_total"
+            app:layout_constraintEnd_toStartOf="@+id/txt_total"
+            app:layout_constraintTop_toTopOf="@+id/txt_total" />
+
+        <TextView
+            android:id="@+id/txt_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Total"
+            android:textColor="#fff"
+            android:textSize="15dp"
+            app:layout_constraintEnd_toEndOf="@+id/txtTotalTitle"
+            app:layout_constraintStart_toStartOf="@+id/txtTotalTitle"
+            app:layout_constraintTop_toBottomOf="@+id/txtTotalTitle" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/btn_check_out"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#a10e0e"
+        android:fontFamily="@font/montserratmedium"
+        android:text="Proceed to Checkout"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/shopping_cart_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_check_out"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout6"
+        android:padding="10dp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

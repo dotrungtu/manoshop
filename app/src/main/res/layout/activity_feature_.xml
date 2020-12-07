@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.manoshop.Feature_Activity"
+    android:background="#f7f7f7"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/img_btn_featured_back"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/gradient_ic_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/img_btn_featured_to_cart"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/gradient_ic_cart_w"
+        android:padding="3dp"
+        app:layout_constraintBottom_toBottomOf="@+id/img_btn_featured_back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/img_btn_featured_back" />
+
+    <ImageView
+        android:id="@+id/img_btn_featured_to_fav"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="10dp"
+        android:src="@drawable/gradient_ic_fav"
+        app:layout_constraintBottom_toBottomOf="@+id/img_btn_featured_to_cart"
+        app:layout_constraintEnd_toStartOf="@+id/img_btn_featured_to_cart"
+        app:layout_constraintTop_toTopOf="@+id/img_btn_featured_to_cart" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="10dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@drawable/bg_featured_locatons"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_btn_featured_back" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_featured"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        tools:listitem="@layout/inflater_featured"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView12" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

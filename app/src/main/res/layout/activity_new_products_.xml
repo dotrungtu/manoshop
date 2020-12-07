@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.manoshop.NewProducts_Activity"
+    android:background="#fff"
+    android:padding="10dp"
+    android:scrollbars="none">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img_btn_new_product_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:scaleY="1.1"
+            android:scaleX="1.1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/gradient_ic_back" />
+
+        <ImageView
+            android:id="@+id/img_btn_new_pro_to_fav"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="10dp"
+            app:layout_constraintBottom_toBottomOf="@+id/img_btn_new_product_back"
+            app:layout_constraintEnd_toStartOf="@+id/img_btn_new_pro_cart"
+            app:layout_constraintTop_toTopOf="@+id/img_btn_new_product_back"
+            android:src="@drawable/gradient_ic_fav" />
+
+        <ImageView
+            android:id="@+id/img_btn_new_pro_cart"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="3dp"
+            app:layout_constraintBottom_toBottomOf="@+id/img_btn_new_pro_to_fav"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/img_btn_new_pro_to_fav"
+            android:src="@drawable/gradient_ic_cart_w" />
+
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@+id/img_btn_new_product_back"
+            app:layout_constraintTop_toBottomOf="@+id/img_btn_new_product_back"
+            app:srcCompat="@drawable/img_new_product_title" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_new_product"
+            android:layout_width="0dp"
+            android:layout_height="500dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView11" />
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/funcitylevel3basic"
+            android:text="Recommend"
+            android:textColor="#333"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/recycler_new_product" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_new_product_recommend"
+            android:layout_width="0dp"
+            android:layout_height="180dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

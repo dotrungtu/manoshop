@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">Mano Store</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="title_activity_register_phone_">Sign in</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+
+    <string name="verify_tittle">CO\nDE</string>
+
+    <string name="reset_pass_tittle">RESET\nPASSWORD</string>
+
+    <string name="new_product">New\nProducts</string>
+
+    <string name="set_password_title">New Password</string>
+    <string name="set_password_des">Your identity has been verified!\nSet your new password</string>
+
+    <string name="second_screen_forgot_title">CHOOSE\nA METHOD</string>
+    <string name="second_screen_forgot_des">Select a desired method to reset your password!</string>
+
+    <string name="change_pass_des">Enter your current password\nto change a new one</string>
+
+    <string name="top_picks_title">TOP</string>
+    <string name="top_picks_des">Our most popular products are here</string>
+
+    <string name="join_us_title">choose\nyour style</string>
+    <string name="join_us_des">Join us in finding your style and glances</string>
+
+    <string name="purchase_title">Purchase</string>
+    <string name="history_title">History</string>
+
+    <string-array name="spinner_size">
+        <item>S</item>
+        <item>M</item>
+        <item>L</item>
+        <item>XL</item>
+        <item>XXL</item>
+    </string-array>
+</resources>
